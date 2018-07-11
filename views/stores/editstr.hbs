@@ -1,0 +1,22 @@
+<div class="backer2">
+
+  <h1> Edit Store</h1>
+
+  <form action="/employers/{{employerId}}/stores/{{Sid}}?_method=PUT" method="POST">
+
+    <div>
+
+      <label for="Name">Store Name</label>
+
+      <input type="text" name="Name" value={{store.storeName}} />
+
+    </div>
+
+    
+
+
+    <button type="submit">Update</button>
+
+  </form>
+
+</div>

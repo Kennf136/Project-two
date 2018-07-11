@@ -1,0 +1,24 @@
+<div class="backer3">
+        <div class="backer4">
+<h1>Managers in your Network</h1>
+
+                    <ul>
+                        {{#each listOfemployers}}
+                        
+                        <li>
+                            <a href="/employers/{{_id}}">
+                            
+                            <p>  {{Name}} </p>
+                            
+                            <p><img class="img" src="{{img}}" alt=""></p>
+                        
+                            </a>
+                        </li>
+                        {{/each}}
+
+                    </ul>
+
+<a href="/employers/new"><button>New Managers</button></a>
+      
+        </div>
+</div>

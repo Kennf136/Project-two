@@ -1,0 +1,41 @@
+<div class="backer1">
+
+  <h1>{{ employers.Name }}</h1>
+
+  <p>
+    <img src="{{employers.img}}" class="img"> </p>
+
+  <div id="employerStoreBox">
+    <p> {{#each employers.Stores}} </p>
+    <a href="/employers/{{../employers._id}}/stores/{{_id}}">
+
+      {{storeName}} {{/each}}
+    </a>
+
+  </div>
+
+  <Div>
+    <a href="/employers/{{employers._id}}/stores/new">
+      <button type="button">New Store</button>
+    </a>
+  </Div>
+
+  <div class="editline">
+
+    <a href="/employers/{{employers._id}}/edit">
+      <button>Edit Manager</button>
+    </a>
+
+    <form action="/employers/{{employers._id}}?_method=DELETE" method="POST">
+
+      <button type="submit">Delete Manager</button>
+
+    </form>
+
+  </div>
+
+  <a href="/employers">
+    <button>back</button>
+  </a>
+
+</div>

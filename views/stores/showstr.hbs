@@ -1,0 +1,30 @@
+<div class="backer4">
+    <div class="backer3">
+       <ul>
+       {{#each employers.Stores}}
+       <li>{{storeName}} </li>
+      <li>{{location}} </li> 
+       <li>{{houresOfOpp}}</li> 
+       <li>{{inventory}}</li>
+       </ul>
+       {{/each}}
+       
+<H1>{{store.storeName}}</H1>
+        <a href="">
+            <span>{{#each stores.employees}}</span>
+            {{name}} {{/each}}
+        </a>
+
+<a href="/employers/{{employers._id}}/stores/{{Sid}}/editstr">
+<button>Edit Store</button>
+</a>
+        <form action="/employers/{{employers._id}}?_method=DELETE" method="POST">
+            <button type="submit">Delete stores</button>
+
+        </form>
+        <a href="/employers">
+            <button>back</button>
+        </a>
+
+    </div>
+</div>
